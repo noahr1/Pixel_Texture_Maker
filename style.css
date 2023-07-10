@@ -1,0 +1,49 @@
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.color-options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    background-color: gray;
+}
+
+.color-options div {
+    border: 1px solid black;
+    color: white;
+}
+.color-options div:hover {
+    background-color: darkgray;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-evenly;
+    width: 375px;
+    height: 35px;
+}
+
+.color-selector {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+}
+
+.color-selector div {
+    width: 25px;
+    height: 25px;
+}
+
+.div {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+
+.test-div {
+    position: absolute;
+    left: -150px;
+}

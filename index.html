@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Texture Maker</title>
+    <script defer src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="size-form">
+        <h2>Instance Settings</h2>
+        <label name="widthpx">Rows:</label><input name="widthpx" type="number" value="16" min="16" max="256">
+        <label name="heightpx">Columns:</label><input name="heightpx" type="number" value="16" min="16" max="256">
+        <label name="sizepx">Size in px:</label><input name="sizepx" type="number" value="32" min="16" max="128">
+        <input type="submit">
+    </form>
+    <div class="color-picker">
+        <div class="color-options">
+            <div class="white-option">White</div>
+            <div class="black-option">Black</div>
+            <div class="red-option">Red</div>
+            <div class="blue-option">Blue</div>
+            <div class="green-option">Green</div>
+            <div class="custom-option">Custom</div>
+        </div>
+        <div class="color-selector">
+            <div></div>
+            <input type="number" value="0" min="0" max="255">
+            <input type="number" value="0" min="0" max="255">
+            <input type="number" value="0" min="0" max="255">
+        </div>
+    </div>
+    <div class="tools">
+        <div>Pencil</div>
+        <div>Line</div>
+        <div>Color Picker</div>
+        <div>Color Fill</div>
+        <div>Eraser</div>
+    </div>
+    <div class="container"></div>
+    <div>
+        <form id="download-form">
+            <input placeholder="Filename" type="text">
+            <input type="radio" id="mst" name="ts"><label for="mst">Minecraft Scale Texture</label>
+            <input type="radio" id="rst" name="ts"><label for="rst">Real Scale Texture</label>
+            <input type="submit">
+        </form>
+    </div>
+    <a hidden id="link"></a>
+    <div class="div"></div>
+    <canvas></canvas>
+    <div class="test-div">Test</div>
+</body>
+</html>
